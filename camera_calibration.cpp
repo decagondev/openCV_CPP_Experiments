@@ -7,18 +7,15 @@ void calibrateCamera(const std::string& cameraID, const std::string& calibration
         return;
     }
 
-    // Calibration logic using OpenCV (you may need to implement this based on your specific needs)
-    // ...
+    // TODO: Calibration logic using OpenCV 
 
     // Save calibration data to a file
     cv::FileStorage fs(calibrationFile, cv::FileStorage::WRITE);
-    // Write calibration parameters to the file
-    // ...
+    // TODO: Write calibration parameters to the file
     fs.release();
 }
 
 int main() {
-    // Example usage
-    calibrateCamera("0", "calibration_data.yml");
+    // USAGE: calibrateCamera("0", "calibration_data.yml");
     return 0;
 }
